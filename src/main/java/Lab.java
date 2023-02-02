@@ -1,3 +1,4 @@
+import static org.junit.Assert.fail;
 
 /**
  * In order to make our programs even more impressive and interactive, we need to learn how to better leverage
@@ -13,7 +14,17 @@ public class Lab {
      * @param b a true/false value.
      * @return if b is true, return true. if b is false, return false.
      */
-    public boolean returnBoolean(boolean b){
+    public boolean returnBoolean(boolean b)
+    {
+        if (b == true)
+        {
+            return b;
+        }
+
+        else if (b == false)
+        {
+            return b;
+        }
         return false;
     }
 
@@ -23,6 +34,14 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnNot(boolean b){
+        if (b == true)
+        {
+            return !b; // opposite of b. b = true, !b = false
+        }
+        else if (b == false)
+        {
+            return !b;
+        }
         return false;
     }
 
@@ -33,6 +52,10 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnAnd(boolean b1, boolean b2){
+        if (b1 && b2 == true)
+        {
+            return true;
+        }
         return false;
     }
 
@@ -43,6 +66,14 @@ public class Lab {
      * look into boolean operations to do this without using if/else statements.
      */
     public boolean returnOr(boolean b1, boolean b2){
+        if (b1 || b2 == true)
+        {
+            return true;
+        }
+        else if (b1 && b2 == false)
+        {
+            return false;
+        }
         return false;
     }
 
